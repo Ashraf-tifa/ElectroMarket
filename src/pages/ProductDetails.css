@@ -1,0 +1,287 @@
+/* تصميم الحاوية الرئيسية للمنتج */
+.product-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  /* تصميم المنتج نفسه */
+  .product-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+  }
+  
+  /* صورة المنتج */
+  .product-details-image {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* معلومات المنتج */
+  .product-details-info {
+    flex: 1;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* عنوان المنتج */
+  .product-details-info h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  /* العناوين في تفاصيل المنتج */
+  .product-details-info h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+  }
+  
+  /* تفاصيل المنتج */
+  .product-details-info p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: white;
+  }
+  
+  /* سعر المنتج */
+  .product-details-info p strong {
+    color: white;
+    font-weight: 600;
+  }
+  
+  /* عرض الكمية مع الأزرار */
+  .quantity-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    
+  }
+  
+  /* أزرار الكمية */
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+  }
+  
+  /* زر الزيادة والنقص */
+  .quantity-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .quantity-btn:hover {
+    background-color: #007bff;
+  }
+  
+  /* حقل الكمية */
+  .quantity-input {
+    width: 60px;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* زر إضافة المنتج إلى السلة */
+  .add-to-cart-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* عرض المجموع */
+
+  /* تنسيق الرسالة التي ستظهر عندما يتم إضافة المنتج أو عند وجوده في السلة */
+
+
+.message {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #eca036;   
+  border: 1px solid #032e5b; /* حدود زرقاء */
+  color: white; /* لون النص */
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  animation: fadeOut 5s forwards; /* تأثير الاختفاء التدريجي */
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.message.error {
+  background-color: #de4a45; /* لون أحمر إذا كانت رسالة خطأ */
+}
+
+/* الرسالة الخاصة بنجاح إضافة المنتج */
+.message.success {
+  background-color: #5bc0de; /* لون أزرق فاتح للنجاح */
+}
+/* تنسيق الحاوية الرئيسية للمنتج */
+.product-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* تغيير لتكون العناصر في الأعلى */
+  flex-direction: column; /* ترتيب العناصر عموديًا */
+  padding: 50px 20px;
+  background-color: #274368;
+  border-radius: 20px;
+  color: white;
+}
+.product-details-info p, h1 h3 {
+  color: white;
+}
+/* تصميم المنتج نفسه */
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  background-color: #1b2d49;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 40px; /* مسافة بين تفاصيل المنتج والتعليقات */
+}
+
+/* قسم التعليقات (يتم وضعه في الأسفل) */
+.comments-section {
+  width: 95%;
+  padding: 20px;
+  margin-left: 10px;
+  background-color: #374354;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px; /* المسافة بين المنتج والتعليقات */
+}
+
+/* عنوان قسم التعليقات */
+.comments-section h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* تنسيق حاوية إضافة تعليق */
+.comment-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 94%;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* تنسيق حقل النص لإضافة تعليق */
+.comment-input {
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #e8f1fc;
+  border-radius: 5px;
+  resize: none;
+  transition: border-color 0.3s ease;
+}
+
+.comment-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* تنسيق زر إضافة تعليق */
+.add-comment-btn {
+  align-self: flex-start;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  width: 25%;
+}
+
+.add-comment-btn:hover {
+  background-color: #0056b3;
+}
+
+/* تنسيق قائمة التعليقات */
+.comments-list {
+  margin-top: 20px;
+}
+
+/* تنسيق التعليق */
+.comment {
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #e8f1fc;
+  color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 50%;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-left: 280px;
+}
+
+/* تنسيق اسم المستخدم في التعليق */
+.comment-username {
+  font-size: 16px;
+  font-weight: 600;
+  color: #007bff;
+  margin-bottom: 5px;
+}
+
+/* تنسيق نص التعليق */
+.comment-text {
+  font-size: 16px;
+  color: #555;
+}

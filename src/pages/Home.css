@@ -1,0 +1,301 @@
+/* تنسيق رأس المتجر */
+.store-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 90px;
+  /* padding-bottom: 12%; */
+  background-color: #1b2d49;
+  border-radius: 20px;
+  margin-left: 30px;
+  margin-right: 17px;
+  color: white;
+  width: 80%;
+  padding-left: 110px;
+  margin-bottom: 50px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2d476b; /* خلفية الموقع */
+}
+.store-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.store-header p {
+  font-size: 1.1rem;
+  color: #acacac;
+}
+
+/* تنسيق مربع البحث */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.search-input {
+  width: 470px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 19px;
+  margin-right: 10px;
+}
+
+.search-icon {
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* تنسيق أزرار الراديو */
+.filter-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.filter-container input[type="radio"] {
+  display: none; /* إخفاء أزرار الراديو الأصلية */
+}
+
+.filter-container label {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-container input[type="radio"]:checked + label {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.filter-container label:hover {
+  background-color: #f4f4f4;
+}
+.photo-container {
+  width: 100%; /* عرض الحاوية كامل */
+  height: auto; /* ارتفاع الحاوية ديناميكي */
+  margin: 0; /* إزالة الهوامش */
+  padding: 0; /* إزالة الحشو */
+  overflow: hidden; /* إخفاء أي زوائد خارج الحاوية */
+}
+
+.photo {
+  width: 100%; /* الصورة تأخذ عرض الحاوية بالكامل */
+  height: auto; /* الارتفاع يعتمد على العرض */
+  object-fit: cover; /* ملء الحاوية بدون تشويه */
+  border-radius: 0; /* إزالة الحواف الدائرية */
+  box-shadow: none; /* إزالة الظلال إذا لم تكن مطلوبة */
+}
+
+/* تنسيق شبكة المنتجات */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding: 40px;
+}
+
+.product-card {
+  background-color: #1b2d49;
+  border: 1px solid rgb(18, 27, 40);
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-card h2 {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.product-card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+.product-card button:focus {
+  outline: none;
+}
+
+/* تنسيق رسالة "لا توجد منتجات" */
+.product-grid p {
+  font-size: 1.2rem;
+  color: rgb(214, 234, 255);
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* إزالة الخط تحت النصوص داخل <h2> و <p> */
+.product-card h2,
+.product-card p {
+  text-decoration: none;
+}
+
+/* إزالة الخط تحت رابط <Link> */
+.product-card a {
+  text-decoration: none;
+}/* تصميم القسم السفلي */
+.footer {
+  background-color: rgb(33, 37, 41); /* لون الخلفية داكن */
+  color: white; /* لون النص */
+  display: flex;
+  flex-direction: column; /* تنظيم المحتوى عموديًا */
+  justify-content: space-between; /* توزيع العناصر */
+  align-items: center; /* توسيط العناصر */
+  height: 300px; /* ارتفاع كبير للقسم */
+  padding: 30px 20px; /* مسافة داخلية */
+  text-align: center; /* توسيط النصوص */
+  margin-top: 20px; /* مسافة بين المحتوى والقسم السفلي */
+  
+}
+
+/* الروابط */
+.footer a {
+  color: #007bff; /* لون الروابط */
+  text-decoration: none; /* إزالة الخط السفلي */
+  margin: 0 15px; /* مسافة بين الروابط */
+  font-size: 16px; /* حجم النص */
+  transition: color 0.3s ease; /* تأثير عند التمرير */
+}
+
+.footer a:hover {
+  color: #0056b3; /* لون أغمق عند التمرير */
+}
+
+/* الأقسام الفرعية */
+.footer-top,
+.footer-middle,
+.footer-bottom {
+  margin-bottom: 20px; /* مسافة بين الأقسام */
+}
+
+/* نص الحقوق */
+.footer p {
+  margin: 0; /* إزالة أي هوامش افتراضية */
+  font-size: 14px;
+}
+
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .footer {
+    height: auto; /* السماح بتعديل الطول تلقائيًا */
+    padding: 20px 10px; /* تقليل المسافات الداخلية */
+  }
+
+  .footer a {
+    display: block; /* الروابط تظهر كأعمدة */
+    margin: 5px 0; /* مسافة بين الروابط */
+  }
+
+  .footer p {
+    font-size: 12px; /* تقليل حجم النص */
+  }
+}
+.message {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #3b9cf1; /* خلفية زرقاء فاتحة */
+  border: 1px solid #007bff; /* حدود زرقاء */
+  color: #007bff; /* لون النص */
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  animation: fadeOut 5s forwards; /* تأثير الاختفاء التدريجي */
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.message.error {
+  background-color: #de4a45; /* لون أحمر إذا كانت رسالة خطأ */
+}
+
+/* الرسالة الخاصة بنجاح إضافة المنتج */
+.message.success {
+  background-color: #5bc0de; /* لون أزرق فاتح للنجاح */
+}
+.footer {
+  background-color: #1e2a3a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #007bff;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #0056b3;
+}
+
+.footer-text {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.footer-text a {
+  text-decoration: none;
+  color: #007bff;
+  margin: 0 5px;
+  font-size: 14px;
+}
+
+.footer-text a:hover {
+  color: #0056b3;
+}
