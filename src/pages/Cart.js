@@ -82,7 +82,7 @@ const Cart = () => {
               {cart.map((item) => (
                 <tr key={item.id}>
                   <td>
-                    <img src={item.image} alt={item.nom} className="cart-item-image" />
+                    <img src={process.env.PUBLIC_URL + item.image} alt={item.nom} className="cart-item-image" />
                   </td>
                   <td>{item.nom}</td>
                   <td>{item.prix} DH</td>
@@ -103,7 +103,7 @@ const Cart = () => {
                   <td>
                     <button
                       onClick={() => dispatch(removeFromCart(item.id))} className="remove-btn">
-                      <img src="/12.png" alt="Remove Item" />
+                      <img src = {process.env.PUBLIC_URL + "/12.png"} alt="Remove Item" />
                     </button>
                   </td>
                 </tr>

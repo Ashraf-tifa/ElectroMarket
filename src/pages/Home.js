@@ -45,7 +45,7 @@ function Home() {
             value={search}
             className="search-input"
           />
-          <img src="/search.png" alt="search" className="search-icon" />
+          <img src={process.env.PUBLIC_URL + "/search.png"} alt="search" className="search-icon" />
         </div>
 
         <div className="filter-container">
@@ -98,7 +98,7 @@ function Home() {
             <div key={product.id} className="product-card">
               <Link to={"/product/" + product.id}>
                 <img
-                  src={product.image}
+                  src={process.env.PUBLIC_URL + product.image}
                   alt={product.nom}
                   className="product-image"
                 />
