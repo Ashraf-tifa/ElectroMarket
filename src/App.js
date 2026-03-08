@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <nav>
         <Link to="/">
-          <img src="/ssmov.png" alt="Store Logo" />
+          <img src={process.env.PUBLIC_URL + "/ssmov.png"} alt="Store Logo" />
         </Link>
         <Link to="/">Accueil</Link>
         <Link to="#">Téléphone</Link>
@@ -22,7 +22,7 @@ function App() {
         <Link to="/contact">Contact</Link>
         <div className="cart-icon">
           <Link to="/Cart">
-            <img src="/cart.png" alt="Shopping Cart" />
+            <img src={process.env.PUBLIC_URL + "/cart.png"} alt="Shopping Cart" />
           </Link>
           {totalItems > 0 && <span className="cart-count">{totalItems}</span>}
         </div>
