@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ElectroMarket/static/css/main.1a7cb653.css",
-    "main.js": "/ElectroMarket/static/js/main.bf2bbb7c.js",
+    "main.js": "/ElectroMarket/static/js/main.dd9a3dc2.js",
     "static/js/488.866f5215.chunk.js": "/ElectroMarket/static/js/488.866f5215.chunk.js",
     "index.html": "/ElectroMarket/index.html",
     "main.1a7cb653.css.map": "/ElectroMarket/static/css/main.1a7cb653.css.map",
-    "main.bf2bbb7c.js.map": "/ElectroMarket/static/js/main.bf2bbb7c.js.map",
+    "main.dd9a3dc2.js.map": "/ElectroMarket/static/js/main.dd9a3dc2.js.map",
     "488.866f5215.chunk.js.map": "/ElectroMarket/static/js/488.866f5215.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1a7cb653.css",
-    "static/js/main.bf2bbb7c.js"
+    "static/js/main.dd9a3dc2.js"
   ]
 }
